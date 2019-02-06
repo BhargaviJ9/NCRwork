@@ -1,0 +1,4 @@
+﻿  Source.c
+c:\users\a. sri harsha\source\repos\fafamummy999\ncrwork\cassignment\ass1\gross\gross\source.c(41): warning C4013: 'system' undefined; assuming extern returning int
+  gross.vcxproj -> C:\Users\A. SRI HARSHA\Source\Repos\fafamummy999\NCRwork\cassignment\ass1\gross\Debug\gross.exe
+  gross.vcxproj -> C:\Users\A. SRI HARSHA\Source\Repos\fafamummy999\NCRwork\cassignment\ass1\gross\Debug\gross.pdb (Partial PDB)
