@@ -1,0 +1,5 @@
+﻿  Source.c
+c:\users\cdac\source\repos\fafamummy999\ncrwork\cassignment\ass1\project1\palindrome\palindrome\source.c(9): warning C4018: '<=': signed/unsigned mismatch
+c:\users\cdac\source\repos\fafamummy999\ncrwork\cassignment\ass1\project1\palindrome\palindrome\source.c(19): warning C4013: 'getch' undefined; assuming extern returning int
+  palindrome.vcxproj -> C:\Users\cdac\Source\Repos\fafamummy999\NCRwork\cassignment\ass1\Project1\palindrome\Debug\palindrome.exe
+  palindrome.vcxproj -> C:\Users\cdac\Source\Repos\fafamummy999\NCRwork\cassignment\ass1\Project1\palindrome\Debug\palindrome.pdb (Partial PDB)
