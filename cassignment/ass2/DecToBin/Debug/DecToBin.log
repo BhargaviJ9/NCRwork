@@ -1,0 +1,4 @@
+﻿  Source.c
+c:\users\cdac\source\repos\fafamummy999\ncrwork\cassignment\ass2\dectobin\source.c(15): warning C4013: 'getch' undefined; assuming extern returning int
+  DecToBin.vcxproj -> C:\Users\cdac\Source\Repos\fafamummy999\NCRwork\cassignment\ass2\DecToBin\Debug\DecToBin.exe
+  DecToBin.vcxproj -> C:\Users\cdac\Source\Repos\fafamummy999\NCRwork\cassignment\ass2\DecToBin\Debug\DecToBin.pdb (Partial PDB)
