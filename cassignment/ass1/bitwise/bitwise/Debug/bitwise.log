@@ -1,0 +1,4 @@
+﻿  Source.c
+c:\users\a. sri harsha\source\repos\fafamummy999\ncrwork\cassignment\ass1\bitwise\bitwise\source.c(18): warning C4013: 'system' undefined; assuming extern returning int
+  bitwise.vcxproj -> C:\Users\A. SRI HARSHA\Source\Repos\fafamummy999\NCRwork\cassignment\ass1\bitwise\Debug\bitwise.exe
+  bitwise.vcxproj -> C:\Users\A. SRI HARSHA\Source\Repos\fafamummy999\NCRwork\cassignment\ass1\bitwise\Debug\bitwise.pdb (Partial PDB)
