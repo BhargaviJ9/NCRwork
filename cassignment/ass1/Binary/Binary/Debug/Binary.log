@@ -1,0 +1,4 @@
+﻿  Source.c
+c:\users\a. sri harsha\source\repos\fafamummy999\ncrwork\cassignment\ass1\binary\binary\source.c(19): warning C4013: 'system' undefined; assuming extern returning int
+  Binary.vcxproj -> C:\Users\A. SRI HARSHA\Source\Repos\fafamummy999\NCRwork\cassignment\ass1\Binary\Debug\Binary.exe
+  Binary.vcxproj -> C:\Users\A. SRI HARSHA\Source\Repos\fafamummy999\NCRwork\cassignment\ass1\Binary\Debug\Binary.pdb (Partial PDB)
