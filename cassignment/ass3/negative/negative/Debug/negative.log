@@ -1,0 +1,5 @@
+﻿  Source.c
+c:\users\a. sri harsha\source\repos\fafamummy999\ncrwork\cassignment\ass3\negative\negative\source.c(32): warning C4013: 'system' undefined; assuming extern returning int
+c:\users\a. sri harsha\source\repos\fafamummy999\ncrwork\cassignment\ass3\negative\negative\source.c(6): warning C4101: 'k': unreferenced local variable
+  negative.vcxproj -> C:\Users\A. SRI HARSHA\Source\Repos\fafamummy999\NCRwork\cassignment\ass3\negative\Debug\negative.exe
+  negative.vcxproj -> C:\Users\A. SRI HARSHA\Source\Repos\fafamummy999\NCRwork\cassignment\ass3\negative\Debug\negative.pdb (Partial PDB)
