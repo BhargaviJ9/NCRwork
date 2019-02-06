@@ -1,0 +1,4 @@
+﻿  Source.c
+c:\users\a. sri harsha\source\repos\fafamummy999\ncrwork\cassignment\ass3\bits\bits\source.c(13): warning C4013: 'system' undefined; assuming extern returning int
+  bits.vcxproj -> C:\Users\A. SRI HARSHA\Source\Repos\fafamummy999\NCRwork\cassignment\ass3\bits\Debug\bits.exe
+  bits.vcxproj -> C:\Users\A. SRI HARSHA\Source\Repos\fafamummy999\NCRwork\cassignment\ass3\bits\Debug\bits.pdb (Partial PDB)
