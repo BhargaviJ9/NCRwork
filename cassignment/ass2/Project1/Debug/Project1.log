@@ -1,0 +1,4 @@
+﻿  Source.c
+c:\users\cdac\source\repos\fafamummy999\ncrwork\cassignment\ass2\source.c(34): warning C4013: 'getch' undefined; assuming extern returning int
+  Project1.vcxproj -> C:\Users\cdac\Source\Repos\fafamummy999\NCRwork\cassignment\ass2\Project1\Debug\BinToDec.exe
+  Project1.vcxproj -> C:\Users\cdac\Source\Repos\fafamummy999\NCRwork\cassignment\ass2\Project1\Debug\BinToDec.pdb (Partial PDB)
