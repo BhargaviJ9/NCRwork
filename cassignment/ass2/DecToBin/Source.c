@@ -8,7 +8,7 @@ int main()
 	{
 		r = num % 2;
 		sum = sum + (r * base);
-		num = num / 10;
+		num = num / 2;
 		base = base * 10;
 	}
 	printf("%d", sum);
