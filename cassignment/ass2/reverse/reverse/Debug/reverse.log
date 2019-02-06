@@ -1,0 +1,4 @@
+﻿  Source.c
+c:\users\a. sri harsha\source\repos\fafamummy999\ncrwork\cassignment\ass2\reverse\reverse\source.c(13): warning C4013: 'system' undefined; assuming extern returning int
+  reverse.vcxproj -> C:\Users\A. SRI HARSHA\Source\Repos\fafamummy999\NCRwork\cassignment\ass2\reverse\Debug\reverse.exe
+  reverse.vcxproj -> C:\Users\A. SRI HARSHA\Source\Repos\fafamummy999\NCRwork\cassignment\ass2\reverse\Debug\reverse.pdb (Partial PDB)
