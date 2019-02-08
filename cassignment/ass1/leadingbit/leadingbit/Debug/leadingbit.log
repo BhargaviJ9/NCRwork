@@ -1,0 +1,4 @@
+﻿  Source.c
+c:\users\cdac\source\repos\bhargavij9\ncrwork\cassignment\ass1\leadingbit\leadingbit\source.c(22): warning C4013: 'system' undefined; assuming extern returning int
+  leadingbit.vcxproj -> C:\Users\cdac\Source\Repos\BhargaviJ9\NCRwork\cassignment\ass1\leadingbit\Debug\leadingbit.exe
+  leadingbit.vcxproj -> C:\Users\cdac\Source\Repos\BhargaviJ9\NCRwork\cassignment\ass1\leadingbit\Debug\leadingbit.pdb (Partial PDB)
