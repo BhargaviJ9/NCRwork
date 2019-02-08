@@ -1,0 +1,5 @@
+﻿  Source.c
+c:\users\cdac\source\repos\bhargavij9\ncrwork\cassignment\ass1\bitwise1\bitwise1\source.c(10): warning C4013: 'getch' undefined; assuming extern returning int
+c:\users\cdac\source\repos\bhargavij9\ncrwork\cassignment\ass1\bitwise1\bitwise1\source.c(4): warning C4101: 'g': unreferenced local variable
+  bitwise1.vcxproj -> C:\Users\cdac\Source\Repos\BhargaviJ9\NCRwork\cassignment\ass1\bitwise1\Debug\bitwise1.exe
+  bitwise1.vcxproj -> C:\Users\cdac\Source\Repos\BhargaviJ9\NCRwork\cassignment\ass1\bitwise1\Debug\bitwise1.pdb (Partial PDB)
