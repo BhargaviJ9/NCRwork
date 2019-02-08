@@ -1,0 +1,4 @@
+﻿  Source.c
+c:\users\cdac\source\repos\bhargavij9\ncrwork\cassignment\ass1\dec,hex\dec,hex\source.c(9): warning C4013: 'getch' undefined; assuming extern returning int
+  dec,hex.vcxproj -> C:\Users\cdac\Source\Repos\BhargaviJ9\NCRwork\cassignment\ass1\dec,hex\Debug\dec,hex.exe
+  dec,hex.vcxproj -> C:\Users\cdac\Source\Repos\BhargaviJ9\NCRwork\cassignment\ass1\dec,hex\Debug\dec,hex.pdb (Partial PDB)
