@@ -1,0 +1,10 @@
+﻿  Source.c
+c:\users\cdac\source\repos\bhargavij9\ncrwork\cassignment\ass1\interest\interest\source.c(24): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\cdac\source\repos\bhargavij9\ncrwork\cassignment\ass1\interest\interest\source.c(29): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\cdac\source\repos\bhargavij9\ncrwork\cassignment\ass1\interest\interest\source.c(34): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\cdac\source\repos\bhargavij9\ncrwork\cassignment\ass1\interest\interest\source.c(39): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\cdac\source\repos\bhargavij9\ncrwork\cassignment\ass1\interest\interest\source.c(44): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\cdac\source\repos\bhargavij9\ncrwork\cassignment\ass1\interest\interest\source.c(60): warning C4013: 'getch' undefined; assuming extern returning int
+c:\users\cdac\source\repos\bhargavij9\ncrwork\cassignment\ass1\interest\interest\source.c(54): warning C4101: 'si': unreferenced local variable
+  interest.vcxproj -> C:\Users\cdac\Source\Repos\BhargaviJ9\NCRwork\cassignment\ass1\interest\Debug\interest.exe
+  interest.vcxproj -> C:\Users\cdac\Source\Repos\BhargaviJ9\NCRwork\cassignment\ass1\interest\Debug\interest.pdb (Partial PDB)
