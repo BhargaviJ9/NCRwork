@@ -1,0 +1,4 @@
+﻿  Source.c
+c:\users\cdac\desktop\ncr1\ncrwork\cassignment\ass 4\case\case\source.c(13): warning C4013: 'getch' undefined; assuming extern returning int
+  case.vcxproj -> C:\Users\cdac\Desktop\ncr1\NCRwork\cassignment\ass 4\case\Debug\case.exe
+  case.vcxproj -> C:\Users\cdac\Desktop\ncr1\NCRwork\cassignment\ass 4\case\Debug\case.pdb (Partial PDB)
