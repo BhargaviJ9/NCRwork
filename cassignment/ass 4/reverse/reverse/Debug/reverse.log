@@ -1,0 +1,5 @@
+﻿  Source.c
+c:\users\cdac\desktop\ncr1\ncrwork\cassignment\ass 4\reverse\reverse\source.c(9): warning C4013: 'getch' undefined; assuming extern returning int
+c:\users\cdac\desktop\ncr1\ncrwork\cassignment\ass 4\reverse\reverse\source.c(19): warning C4716: 'rev': must return a value
+  reverse.vcxproj -> C:\Users\cdac\Desktop\ncr1\NCRwork\cassignment\ass 4\reverse\Debug\reverse.exe
+  reverse.vcxproj -> C:\Users\cdac\Desktop\ncr1\NCRwork\cassignment\ass 4\reverse\Debug\reverse.pdb (Partial PDB)
