@@ -1,0 +1,4 @@
+﻿  Source.cpp
+c:\users\cdac\desktop\ncr1\ncrwork\c++ assignment\ass1\cartesian\cartesian\source.cpp(27): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  cartesian.vcxproj -> C:\Users\cdac\Desktop\ncr1\NCRwork\c++ assignment\ass1\cartesian\Debug\cartesian.exe
+  cartesian.vcxproj -> C:\Users\cdac\Desktop\ncr1\NCRwork\c++ assignment\ass1\cartesian\Debug\cartesian.pdb (Partial PDB)
