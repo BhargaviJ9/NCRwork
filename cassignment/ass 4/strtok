@@ -1,0 +1,35 @@
+#include <string.h>
+
+#include <stdio.h>
+
+
+
+int main () {
+
+   char str[80] = "Bhargavi * is a  * good girl";
+
+   const char s[2] = "*";
+
+   char *me;
+
+   me= strtok(str, s);
+
+
+
+   while( me != '\0' )
+
+   {
+
+      printf( " %s\n", me );
+
+
+
+       me = strtok(NULL, s);
+
+   }
+
+
+
+   return 0;
+
+}
