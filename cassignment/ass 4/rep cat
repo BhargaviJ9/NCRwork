@@ -1,0 +1,43 @@
+#include<stdio.h>
+
+#include<string.h>
+
+#include<stdlib.h>
+
+int main()
+
+{
+
+ // int n;
+
+  char *cat;
+
+//  printf("enter number of characters");
+
+ // scanf("%d",&n);
+
+  cat=(char*)malloc(sizeof(char)*20);
+
+  printf("enter the string");
+
+  gets(cat);
+
+  int i,count=0;
+
+  for(i=0;*(cat+i)!='\0';i++)
+
+  if(*(cat+i)==' ')
+
+  {
+
+    count=count+1;
+
+    *(cat+i)='-';
+
+  }
+
+  printf("%s\t%d",cat,count);
+
+ return 0;
+
+}
