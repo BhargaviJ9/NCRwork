@@ -1,0 +1,121 @@
+//menu 
+#include<stdio.h>
+#include<string.h>
+#include<ctype.h>
+int count(FILE *fp);
+int rotate(FILE *);
+int tab(FILE *fp);
+int comment(FILE *fp);
+int main()
+{
+ FILE *fp;
+ char str[20] = "hello world//a";
+ fopen_s(&fp,"file.txt", "r"); 
+ int choice;
+ printf("enter your choice\n 1:count the digits, alphabets, spaces and special characters\n2 : to remove the comments\n3 : to rotate the matching word and replace it\n4 : to remove the tab and replace with \t"); 
+ scanf_s("%d", &choice);
+ switch (choice)
+ {
+ case 1 : count(fp);// calls the count function to calculate the digits, alphabets, spaces and special characters
+  break;
+ case 2 :comment(fp);// removes the comments wherever encountered
+  break;
+ case 3 :rotate(fp);// rotates the word and replaces the given word after matching
+  break;
+ case 4 :tab(fp);// replaces the tabs with \t
+  break;
+ }
+ fclose(fp);
+ getch();
+ return 0;
+}
+
+
+//count 
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<ctype.h>
+int count(FILE *fp)
+{
+ int a=0, d=0, s=0, l=0,i;
+ char ch;
+ while(!feof(fp))
+ {
+  ch = fgetc(fp);
+  if (isalpha(ch))
+  {
+   a = a + 1;
+  }
+  else if (isdigit(ch))
+  {
+   d = d + 1;
+  }
+  else if (ch== ' ')
+  {
+   s = s + 1;
+  }
+  else
+  {
+   l = l + 1;
+  }
+ }
+ printf("alphabets:%d\ndigits:%d\nspaces:%d\nspecial characters:%d\n", a, d, s, l);
+ getch();
+}
+
+//comments
+
+#include<ctype.h>
+#include<stdlib.h>
+#include<stdio.h>
+int comment(FILE *fp)
+{
+ char ch;
+ FILE *fp2;
+ fopen_s(&fp2, "sf.txt", "w");
+ 
+ while (!feof(fp))
+ {
+  ch = fgetc(fp);
+  if (ch == '/')
+  {
+   ch = fgetc(fp);
+   if (ch=='/')
+   {
+    while (ch=(fgetc(fp)) != '\n')
+    {
+    }
+   }
+  }
+  if(ch!=EOF)
+  fputc(ch,fp2);
+  
+ }
+ return 0;
+}
+
+//tabs
+
+#include<ctype.h>
+#include<stdlib.h>
+#include<stdio.h>
+int tab(FILE *fp)
+{
+ FILE *fp2;
+ fopen_s(&fp2, "sf.txt", "w");
+ char ch;
+ while (!feof(fp))
+ {
+  ch = fgetc(fp);
+  if (ch == '\t')
+  {
+    fputc('\\',fp2);
+    fputc('t',fp2);
+    continue;
+  }
+  if(ch!=EOF)
+  fputc(ch, fp2);
+ }
+ return 0;
+}
