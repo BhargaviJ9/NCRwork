@@ -1,0 +1,63 @@
+#include<stdio.h>
+
+#include<string.h>
+
+void expand(char[],char[]);
+
+int main()
+
+{
+
+ char s1[20],s2[20];
+
+ printf("enter a string");
+
+ scanf("%s",s1);
+
+ expand(s1,s2);
+
+ return 0;
+
+}
+
+void expand(char a[20],char b[20])
+
+{
+
+ int i=0,j=0;
+
+ char c,d;
+
+ for(i=0;i<strlen(a);i++)
+
+ {
+
+  if(a[i]=='-')
+
+  {
+
+   c=a[i-1];
+
+   d=a[i+1];
+
+   while(c<d)
+
+   {
+
+    c=c+1;
+
+    b[j]=c;
+
+    j=j+1;
+
+   }
+
+   i=i+2;
+
+  }
+
+   b[j]=a[i];
+
+   j=j+1;
+
+ }
