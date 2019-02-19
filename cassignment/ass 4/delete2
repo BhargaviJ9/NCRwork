@@ -1,0 +1,64 @@
+include<stdio.h>
+
+#include<string.h>
+
+void delete2(char[],char[]);
+
+int main()
+
+{
+
+ char s1[20],s2[20];
+
+ printf("enter s1");
+
+ scanf("%s",s1);
+
+ printf("enter s2");
+
+ scanf("%s",s2);
+
+ delete2(s1,s2);
+
+ return 0;
+
+}
+
+void delete2(char a[20],char b[20])
+
+{
+
+ int i,j,k=0;
+
+ char temp[20];
+
+ for (i=0;i<strlen(a);i++)
+
+  {
+
+  for(j=0;j<strlen(b);j++)
+
+  {
+
+   if(a[i]==b[j])
+
+   {
+
+     i++;
+
+     j=0;
+
+   }
+
+  }
+
+  temp[k]=a[i];
+
+  k=k+1;
+
+  }
+
+ printf("%s",temp);
+
+
+ }
