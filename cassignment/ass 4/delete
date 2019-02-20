@@ -1,0 +1,51 @@
+#include<stdio.h>
+
+#include<string.h>
+
+void delete(char[],char);
+
+int main()
+
+{
+
+ char s1[20],ch;
+
+ printf("enter string1");
+
+ scanf("%s",s1);
+
+ printf("enter a character:");
+
+ scanf(" %c",&ch);
+
+ delete(s1,ch);
+
+ return 0;
+
+}
+
+void delete(char a[20],char b)
+
+{
+
+ int i;
+
+ char temp[20];
+
+ for(i=0;i<strlen(a);i++)
+
+ {
+
+  if(a[i]==b)
+
+  {
+
+    i++;
+
+  }
+
+  printf("%c",a[i]);
+
+ }
+
+}
