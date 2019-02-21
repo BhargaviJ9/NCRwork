@@ -1,0 +1,91 @@
+#include<iostream>
+using namespace std;
+struct _stack_
+{
+ int top;
+ int *s;
+ int size;
+};
+class stack
+{ 
+ struct _stack_ s1;
+ public:
+  stack();
+  void push(int);
+  int pop();
+  int peek();
+  bool IsEmpty();
+  bool IsFull();
+  void display();
+  void getsize(int);
+   ~stack();
+};
+stack::stack()
+{
+ s1.top=-1;
+ s1.s=NULL;
+ s1.size=0;
+}
+void stack::getsize(int n)
+{
+ s1.size=n;
+ s1.s=new int[n];
+}
+bool stack::IsFull()
+{
+ return(s1.top==(s1.size-1));
+}
+bool stack::IsEmpty()
+{
+ return(s1.top==-1);
+}
+void stack::push(int ele)
+{
+ if(!IsFull())
+ {
+  s1.s[++s1.top]=ele;
+ }
+ else
+  cout<<"stack is full";
+}
+int stack::pop()
+{
+ int x=-999;
+ if(!IsEmpty())
+  x=s1.s[s1.top--];
+ else
+  cout<<"stack is empty";
+ return x;
+}
+int stack::peek()
+{
+ int x=-999;
+ if(!IsEmpty())
+  x=s1.s[s1.top];
+ else
+  cout<<"stack is empty";
+ return x;
+}
+void stack::display()
+{
+ for(int i=0;i<=s1.top;i++)
+  cout<<s1.s[i];
+}
+stack::~stack()
+{
+ delete s1.s;
+}
+int main()
+{
+ stack s;
+ s.getsize(5);
+ s.push(4);
+ s.push(5);
+ s.push(6);
+ s.push(7);
+ s.peek();
+ s.pop();
+ s.pop();
+ s.display();
+ return 0;
+}
