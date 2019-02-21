@@ -1,0 +1,103 @@
+#include<iostream>
+using namespace std;
+struct _stack_
+{
+ int top=-1;
+ char *s;
+ int size;
+};
+class stack
+{
+ struct _stack_ s1;
+ public:
+ stack();
+ void getsize(int);
+ void display();
+ char pop(char);
+ char peek();
+ bool IsFull();
+ bool IsEmpty();
+ void push(char);
+};
+stack::stack()
+{
+ s1.top=-1;
+ s1.s=NULL;
+ s1.size=0;
+}
+void stack::getsize(int n)
+{
+ s1.size=n;
+ s1.s=new char[n];
+}
+void stack::display()
+{
+ int i;
+ cin>>s1.s;
+ cout<<"this is the input:";
+ cout<<s1.s;
+ for(i=0;s1.s[i]!='\0';i++)
+ {
+  char ch=s1.s[i];
+  switch(ch)
+  {
+   case '(':push(ch);
+            break;
+   case '[':push(ch);
+            break;
+   case '{':push(ch);
+            break;
+   case ')':pop(ch);
+            break;
+   case ']':pop(ch);
+            break;
+   case '}':pop(ch);
+            break;
+   default:;
+  }
+ }
+if(s1.top==-1)
+ cout<<"balanced";
+else
+ cout<<"unbalanced";
+}
+void stack::push(char ele)
+{
+ if(!IsFull())
+ s1.s[++s1.top]=ele;
+ else
+ cout<<"stack is full";
+}
+
+char stack::pop(char ch)
+{
+ if(!IsEmpty())
+ if(((ch==')') && (peek()=='(')) ||((ch==']') && (peek()=='['))||((ch=='}') && (peek()=='{')))
+  s1.top=s1.top-1;
+}
+char stack::peek()
+{
+ int x=-999;
+ if(!IsEmpty())
+  x=s1.s[s1.top];
+ else
+  cout<<"stack is empty";
+ return x;
+}
+bool stack::IsFull()
+{
+ return(s1.top==(s1.size-1));
+}
+bool stack::IsEmpty()
+{
+ return(s1.top==-1);
+}
+
+int main()
+{
+ stack a;
+ a.getsize(10);
+ cout<<"enter the string";
+ a.display();
+ return 0;
+}
