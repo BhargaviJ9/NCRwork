@@ -1,0 +1,6 @@
+﻿  Source.cpp
+c:\users\a. sri harsha\source\repos\bhargavij9\ncrwork\empty\revised\calc\calc\source.cpp(191): warning C4018: '<': signed/unsigned mismatch
+c:\users\a. sri harsha\source\repos\bhargavij9\ncrwork\empty\revised\calc\calc\source.cpp(238): warning C4018: '<': signed/unsigned mismatch
+c:\users\a. sri harsha\source\repos\bhargavij9\ncrwork\empty\revised\calc\calc\source.cpp(258): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  calc.vcxproj -> C:\Users\A. SRI HARSHA\Source\Repos\BhargaviJ9\NCRwork\empty\revised\calc\Debug\calc.exe
+  calc.vcxproj -> C:\Users\A. SRI HARSHA\Source\Repos\BhargaviJ9\NCRwork\empty\revised\calc\Debug\calc.pdb (Partial PDB)
