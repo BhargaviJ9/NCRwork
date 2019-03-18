@@ -1,0 +1,52 @@
+#include<iostream>
+using namespace std;
+class A
+{
+public:
+        int public_var;
+protected:
+        int protected_var;
+private:
+        int private_var;
+public:
+        A()
+        {
+                public_var = 10;
+                protected_var = 20;
+                private_var = 30;
+        }
+};
+class B :public A
+{       public:
+        B()
+        {
+                cout << public_var<<endl;
+                cout << protected_var<<endl;
+        }
+};
+class C :protected A
+{
+public:
+        C()
+        {
+                cout << public_var<<endl;
+                cout << protected_var<<endl;
+        }
+};
+class D :private A
+{
+public:
+        D()
+        {
+                cout << public_var<<endl;
+                cout << protected_var<<endl;
+        }
+};
+int main()
+{
+        B b;
+        C c;
+        D d;
+        return 0;
+
+}
