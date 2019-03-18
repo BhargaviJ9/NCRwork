@@ -1,0 +1,99 @@
+#include<iostream>
+using namespace std;
+#define SIZE 100
+template<class T> class Stack;
+template<class T> ostream& operator<<(ostream& cout,Stack<T> &s);
+class Complex
+{       
+        int real;
+        int img;
+public: 
+        Complex()
+        {
+        }
+        Complex(int real, int img)
+        {       
+                this->real = real;
+                this->img = img;
+        }
+        
+        friend ostream& operator<<(ostream &, Complex);
+        
+        ~Complex()
+        {
+        }
+};
+ostream& operator<<(ostream& out, Complex c)
+{               
+        if (c.img < 0)
+                out << c.real << c.img << "i";
+        else
+                out << c.real << " + " << c.img << "i";
+        return out;
+}
+template <class T> class Stack
+{
+    T elements[SIZE];
+    int top;
+    public:
+    Stack()
+    {
+        top = -1;
+    }
+    void Push(T ele)
+    {
+        if(top == SIZE - 1)
+            cout<<"Stack Overflow";
+        elements[++top] = ele;
+    }
+    void Pop()
+    {
+        if(top == -1)
+            cout<<"Stack Underflow";
+          cout<<top;
+          top--;
+       // return (top--);
+    }
+    friend ostream& operator<< <T>(ostream& cout,Stack &s);
+//    void Display(Stack &s){
+//    }
+};
+template<class T>
+ostream& operator<<(ostream& cout,Stack<T> &s)
+{   
+    int i = 0;
+    cout<<"Stack Elements are"<<endl;
+    for(i=0;i<=s.top;i++)
+    {
+        cout<<s.elements[i]<<" "<<endl;
+    }
+    return cout;
+}
+int main()
+{
+    Stack<int> i;
+    i.Push(1);
+    i.Push(1);
+    i.Push(2);
+    i.Pop();
+    cout<<i;
+    Stack<float> f;
+    f.Push(1.234);
+    f.Push(2.567);
+    f.Pop();
+    f.Pop();
+    cout<<f;
+    Stack<string> cstack;
+    cstack.Push("bh");
+    cstack.Push("ar");
+    cstack.Pop();
+    cout<<cstack;
+    Stack<Complex> cmp;
+    Complex c1(2, 3), c2(3, 4), c3(4, 5);
+    cmp.Push(c1);
+    cmp.Pop();
+    cmp.Push(c2);
+    cmp.Push(c3);
+    cout<<cmp;
+    return 0;
+}
