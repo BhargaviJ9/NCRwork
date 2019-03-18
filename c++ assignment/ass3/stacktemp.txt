@@ -1,0 +1,52 @@
+#include<iostream>
+using namespace std;
+#define SIZE 100
+template<class T> class Stack;
+template<class T> ostream& operator<<(ostream& cout,Stack<T> &s);
+template <class T> class Stack
+{   
+    T elements[SIZE];
+    int top;
+    public:
+    Stack()
+    {   
+        top = -1;
+    }
+    void Push(T ele)
+    {   
+        if(top == SIZE - 1)
+            cout<<"Stack Overflow";
+        elements[++top] = ele;
+    }
+    void Pop()
+    {   
+        if(top == -1)
+            cout<<"Stack Underflow";
+          cout<<top;
+          top--; 
+       // return (top--);
+    }
+    friend ostream& operator<<<T>(ostream& cout,Stack &s);
+//    void Display(Stack &s){
+//    }
+};
+int main()
+{
+    Stack<int> i;
+    i.Push(1);
+    i.Push(1);
+    i.Push(2);
+    i.Pop();
+    cout<<i;
+    Stack<float> f;
+    f.Push(1.234);
+    f.Push(2.567);
+    f.Pop();
+//    f.Pop();
+    cout<<f;
+    Stack<string> cstack;
+    cstack.Push("bh");
+    cstack.Push("ar");
+    cstack.Pop();
+    cout<<cstack;
+}
