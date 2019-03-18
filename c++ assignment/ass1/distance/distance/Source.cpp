@@ -44,15 +44,11 @@ int main()
 void sum(distance1 &d1, distance2 &d2)
 {
 	distance1 temp;
-	//temp.m = d1.m + 0.3*(d2.ft);
-//	temp.cm = d1.cm + d2.(0.5*in);
 	cout << "sum:" <<( d1.m + 0.3*(d2.ft)) << "m" << "." <<( d1.cm + d2.in*0.5) << "cm" << endl;
 
 }
 void sum1(distance1 &d1,distance2 &d2)
 {
 		distance2 temp;
-	//	temp.ft = 3.2*(d1.m) + d2.ft;
-		//temp.in = 2.5*(d1.cm) + d2.in;
 		cout << "sum:" <<( 3.2*(d1.m) + d2.ft )<< "ft" << "." << (2.5*(d1.cm) + d2.in)<< "in" << endl;
 }

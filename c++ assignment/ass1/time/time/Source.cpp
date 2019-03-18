@@ -24,7 +24,7 @@ class time
 	
 		sec = a.sec + b.sec;
 		min = a.min + b.min + (sec/60);
-		h = a.h + b.h + (min / 60);
+		h = a.h + b.h + ( / 60);
 		min = min % 60;
 		sec = sec % 60;
 	}
